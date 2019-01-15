@@ -1,0 +1,44 @@
+localhost:8080/rest/buyer (GET):
+[{"idBuyer":13,"name":"b1","region":"Kanavinsky","sale":10.0},
+{"idBuyer":14,"name":"b2","region":"Leninist","sale":15.0},
+{"idBuyer":15,"name":"b3","region":"Moscow","sale":7.5},
+{"idBuyer":16,"name":"b4","region":"Nizhny Novgorod","sale":2.5},
+{"idBuyer":17,"name":"b5","region":"Prioksky","sale":5.0},
+{"idBuyer":18,"name":"b6","region":"Soviet","sale":5.0},
+{"idBuyer":19,"name":"b7","region":"Sormovsky","sale":7.5},
+{"idBuyer":20,"name":"b8","region":"Soviet","sale":15.0},
+{"idBuyer":21,"name":"b9","region":"Kanavinsky","sale":2.5}]
+
+localhost:8080/rest/buyer (POST) param: {"idBuyer":22,"name":"postman","region":"postman","sale":2.5}:
+{"status":"Successfully created"}
+
+localhost:8080/rest/buyer (GET):
+[{"idBuyer":13,"name":"b1","region":"Kanavinsky","sale":10.0},
+{"idBuyer":14,"name":"b2","region":"Leninist","sale":15.0},
+{"idBuyer":15,"name":"b3","region":"Moscow","sale":7.5},
+{"idBuyer":16,"name":"b4","region":"Nizhny Novgorod","sale":2.5},
+{"idBuyer":17,"name":"b5","region":"Prioksky","sale":5.0},
+{"idBuyer":18,"name":"b6","region":"Soviet","sale":5.0},
+{"idBuyer":19,"name":"b7","region":"Sormovsky","sale":7.5},
+{"idBuyer":20,"name":"b8","region":"Soviet","sale":15.0},
+{"idBuyer":21,"name":"b9","region":"Kanavinsky","sale":2.5},
+{"idBuyer":22,"name":"postman","region":"postman","sale":2.5}]
+
+localhost:8080/rest/buyer/14 (DELETE):
+{"status":"Successfully deleted idBuyer = 14"}
+
+localhost:8080/rest/buyer/14 (GET):
+Incorrect id
+
+localhost:8080/rest/buyer/20 (GET):
+{"idBuyer":20,"name":"b8","region":"Soviet","sale":15.0}
+
+localhost:8080/rest/buyer (DELETE):
+{"status":"Your DB successfully deleted =D"}
+
+localhost:8080/rest/buyer (GET):
+[]
+
+
+
+
